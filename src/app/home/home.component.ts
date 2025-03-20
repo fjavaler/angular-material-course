@@ -16,12 +16,9 @@ export class HomeComponent implements OnInit {
 
     advancedCourses$: Observable<Course[]>;
 
-    constructor(private coursesService: CoursesService) {
-
-    }
+    constructor(private readonly coursesService: CoursesService) {}
 
     ngOnInit() {
-
         const courses$ = this.coursesService.findAllCourses();
 
         this.beginnerCourses$ = courses$.pipe(
@@ -29,9 +26,7 @@ export class HomeComponent implements OnInit {
         );
 
         this.advancedCourses$ = courses$.pipe(
-            map(courses => courses.filter(course => course.category === 'ADVANCED') )
+          map(courses => courses.filter(course => course.category === 'ADVANCED') )
         );
-
     }
-
 }
