@@ -39,59 +39,65 @@ import { MatSliderModule} from '@angular/material/slider';
 import { MatTooltipModule} from '@angular/material/tooltip';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {DragDropComponent} from './drag-drop/drag-drop.component';
-
 import {MatGridListModule} from '@angular/material/grid-list';
 import {TreeDemoComponent} from './tree-demo/tree-demo.component';
 import {MatTreeModule} from '@angular/material/tree';
 import {VirtualScrollingComponent} from './virtual-scrolling/virtual-scrolling.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 
-@NgModule({ declarations: [
-        AppComponent,
-        HomeComponent,
-        AboutComponent,
-        CourseComponent,
-        CoursesCardListComponent,
-        CourseDialogComponent,
-        CreateCourseComponent,
-        CreateCourseStep1Component,
-        CreateCourseStep2Component,
-        DragDropComponent,
-        TreeDemoComponent,
-        VirtualScrollingComponent
+@NgModule(
+  {
+    declarations: [
+      AppComponent,
+      HomeComponent,
+      AboutComponent,
+      CourseComponent,
+      CoursesCardListComponent,
+      CourseDialogComponent,
+      CreateCourseComponent,
+      CreateCourseStep1Component,
+      CreateCourseStep2Component,
+      DragDropComponent,
+      TreeDemoComponent,
+      VirtualScrollingComponent
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
-        BrowserAnimationsModule,
-        MatMenuModule,
-        MatButtonModule,
-        MatIconModule,
-        MatCardModule,
-        MatTabsModule,
-        MatSidenavModule,
-        MatListModule,
-        MatToolbarModule,
-        MatTooltipModule,
-        MatInputModule,
-        MatTableModule,
-        MatPaginatorModule,
-        MatSortModule,
-        MatProgressSpinnerModule,
-        MatStepperModule,
-        MatDialogModule,
-        AppRoutingModule,
-        MatSelectModule,
-        MatCheckboxModule,
-        DragDropModule,
-        MatRadioModule,
-        MatSliderModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        ReactiveFormsModule,
-        MatGridListModule,
-        MatTreeModule,
-        ScrollingModule], providers: [
-        CoursesService,
-        provideHttpClient(withInterceptorsFromDi())
-    ] })
-export class AppModule {
-}
+    bootstrap: [AppComponent],
+    imports: [
+      BrowserModule,
+      BrowserAnimationsModule,
+      MatMenuModule,
+      MatButtonModule,
+      MatIconModule,
+      MatCardModule,
+      MatTabsModule,
+      MatSidenavModule,
+      MatListModule,
+      MatToolbarModule,
+      MatTooltipModule,
+      MatInputModule,
+      MatTableModule,
+      MatPaginatorModule,
+      MatSortModule,
+      MatProgressSpinnerModule,
+      MatStepperModule,
+      MatDialogModule,
+      AppRoutingModule,
+      MatSelectModule,
+      MatCheckboxModule,
+      DragDropModule,
+      MatRadioModule,
+      MatSliderModule,
+      MatDatepickerModule,
+      MatNativeDateModule,
+      ReactiveFormsModule,
+      MatGridListModule,
+      MatTreeModule,
+      ScrollingModule
+    ],
+    providers: [
+      CoursesService,
+      provideHttpClient(withInterceptorsFromDi())
+    ]
+  }
+)
+export class AppModule { }
