@@ -9,5 +9,4 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
     standalone: false
 })
 export class CreateCourseComponent {
-
 }
